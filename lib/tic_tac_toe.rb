@@ -10,7 +10,8 @@ WIN_COMBINATIONS = [
 ]
 
 def play(board)
-  input = gets
+  turn(board) until over?(board)
+  
 end
 
 def display_board(board)
