@@ -9,6 +9,10 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
+def play(board)
+  input = gets
+end
+
 def display_board(board)
     puts " #{board[0]} | #{board[1]} | #{board[2]} "
     puts "-----------"
@@ -81,8 +85,4 @@ def winner(board)
   if winning_combo = won?(board)
     board[winning_combo.first]
   end
-end
-
-def play(board)
-  input = gets
 end
